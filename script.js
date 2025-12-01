@@ -33,9 +33,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const typewriterText = document.querySelector('.typewriter-text');
 const typewriterCursor = document.querySelector('.typewriter-cursor');
 const words = [
-    'Full Stack Developer',
-    'React Specialist',
-    'Node.js Enthusiast',
+    'Frontend Engineer',
+    'Wordpress Specialist',
+    'AI Enthusiast',
     'Problem Solver',
     'Creative Thinker',
     'Tech Innovator'
