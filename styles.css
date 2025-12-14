@@ -16,13 +16,13 @@
     --text-muted: #666666;
     
     /* Accent Colors - Change these to your favorite colors */
-    --accent-primary: #00ff88;    /* Main accent - try #007bff for blue */
-    --accent-secondary: #ff0080;  /* Secondary accent - try #ff6b6b for coral */
-    --accent-tertiary: #0088ff;   /* Tertiary accent - try #4ecdc4 for teal */
+    --accent-primary: #b85324;    /* Main accent */
+    --accent-secondary: #ede2d7 /* #9e5924 */ /* #ff0080 */;  /* Secondary accent - try #ff6b6b for coral */
+    --accent-tertiary: #1a100a/* #0088ff */;   /* Tertiary accent - try #4ecdc4 for teal */
     
     /* Glow Effects */
-    --glow-primary: rgba(0, 255, 136, 0.3);
-    --glow-secondary: rgba(255, 0, 128, 0.3);
+    --glow-primary: #b85324  /* rgba(0, 255, 136, 0.3) */;
+    --glow-secondary: #3a231c /* rgba(255, 0, 128, 0.3) */;
     
     /* Typography */
     --font-mono: 'Fira Code', monospace;
@@ -58,8 +58,8 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 50%, rgba(255, 0, 128, 0.1) 0%, transparent 50%),
+    background: radial-gradient(circle at 20% 50%, rgba(237, 226, 215, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(184, 82, 35, 0.205) 0%, transparent 50%),
                 var(--bg-primary);
 }
 
@@ -468,7 +468,7 @@ section {
 
 .skill-category:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
+    box-shadow: 0 10px 30px rgba(255, 174, 0, 0.1);
 }
 
 .category-title {
