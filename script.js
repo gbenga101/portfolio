@@ -85,7 +85,7 @@ particlesJS('particles-js', {
             }
         },
         color: {
-            value: ['#00ff88', '#ff0080', '#0088ff'] // Change these colors to match your theme
+            value: ['#b85324', '#3a231c', '#1a100a'] // Change these colors to match your theme
         },
         shape: {
             type: 'circle',
@@ -117,7 +117,7 @@ particlesJS('particles-js', {
         line_linked: {
             enable: true,
             distance: 150,
-            color: '#00ff88',
+            color: '#ede2d7ad',
             opacity: 0.2,
             width: 1
         },

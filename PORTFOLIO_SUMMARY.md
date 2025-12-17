@@ -2,9 +2,9 @@
 
 ## 📦 What You Get
 
-This is a **complete, professional portfolio website** inspired by ThePrimeagen's design, built with modern web technologies and ready for customization.
+This is a **complete, professional portfolio website** inspired by ThePrimeagen's design, built by ME
 
-### 🎯 Key Features
+### 🎯 Key Features 
 
 - **✅ Fully Responsive** - Perfect on all devices
 - **✅ Interactive Animations** - Typewriter effects, particle background, scroll animations  
@@ -31,15 +31,14 @@ portfolio/
 ├── styles.css              # Complete styling system  
 ├── script.js               # Interactive functionality
 ├── README.md               # Setup and usage guide
-├── CUSTOMIZATION_GUIDE.md  # Detailed customization steps
+├── assets
+|   └myPortfolio.png        # My profile image 
 └── PORTFOLIO_SUMMARY.md    # This summary
 ```
 
 ## 🌟 Live Demo
 
-**View your portfolio here: https://bv2ehkwbm7nog.ok.kimi.link**
-
-The demo shows the template with placeholder content - ready for you to customize with your information.
+**Live here: https://gbenga101.github.io/portfolio**
 
 ## 🎨 Ready to Customize Sections
 

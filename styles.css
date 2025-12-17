@@ -18,7 +18,7 @@
     /* Accent Colors - Change these to your favorite colors */
     --accent-primary: #b85324;    /* Main accent */
     --accent-secondary: #ede2d7 /* #9e5924 */ /* #ff0080 */;  /* Secondary accent - try #ff6b6b for coral */
-    --accent-tertiary: #1a100a/* #0088ff */;   /* Tertiary accent - try #4ecdc4 for teal */
+    --accent-tertiary: /* #1a100a  */#ede2d7ad/* #0088ff */;   /* Tertiary accent - try #4ecdc4 for teal */
     
     /* Glow Effects */
     --glow-primary: #b85324  /* rgba(0, 255, 136, 0.3) */;
