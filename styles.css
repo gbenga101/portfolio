@@ -57,10 +57,16 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
+    pointer-events: none;
     background: radial-gradient(circle at 20% 50%, rgba(237, 226, 215, 0.2) 0%, transparent 50%),
                 radial-gradient(circle at 80% 50%, rgba(184, 82, 35, 0.205) 0%, transparent 50%),
                 var(--bg-primary);
+}
+
+body > *:not(#particles-js) {
+  position: relative;
+  z-index: 1;
 }
 
 /* Container */
@@ -412,17 +418,22 @@ section {
 .about-image {
     display: flex;
     justify-content: center;
+    height: 90%;
 }
 
 .image-container {
     position: relative;
+    max-width: 460px;
+    width: 100%;
 }
 
 .image-placeholder {
-    width: 250px;
-    height: 250px;
+    width: min(320px, 55vw);
+    max-width: 550px;
+    /* aspect-ratio: 1 / 1; */
     background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
     border-radius: 50%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -430,6 +441,13 @@ section {
     color: var(--bg-primary);
     position: relative;
     z-index: 2;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .image-glow {
@@ -783,6 +801,10 @@ section {
     
     .about-stats {
         grid-template-columns: 1fr;
+    }
+
+    .image-placeholder{
+        justify-self: center;
     }
     
     .skills-grid {
