@@ -110,7 +110,7 @@ particlesJS('particles-js', {
             anim: {
                 enable: true,
                 speed: 2,
-                size_min: 0.1,
+                size_min: 0.11,
                 sync: false
             }
         },
