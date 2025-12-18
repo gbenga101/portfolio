@@ -441,7 +441,46 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('%c👋 Hey there! Welcome to my portfolio!', 'color: #00ff88; font-size: 16px; font-weight: bold;');
     console.log('%c💻 Built with passion and lots of coffee!', 'color: #ff0080; font-size: 14px;');
     console.log('%c🌟 Feel free to explore the code!', 'color: #0088ff; font-size: 12px;');
+
+    // Initialize FAQ toggles (collapsible + / -)
+    initFAQ();
 });
+
+// FAQ initialization and toggling
+function initFAQ() {
+    const faqButtons = document.querySelectorAll('.faq-question');
+    if (!faqButtons || faqButtons.length === 0) return;
+
+    faqButtons.forEach(btn => {
+        btn.addEventListener('click', () => toggleFAQ(btn));
+        btn.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleFAQ(btn);
+            }
+        });
+    });
+}
+
+function toggleFAQ(btn) {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+
+    const answer = btn.nextElementSibling;
+    const toggle = btn.querySelector('.faq-toggle');
+    if (!answer) return;
+
+    if (!expanded) {
+        answer.hidden = false;
+        requestAnimationFrame(() => answer.classList.add('open'));
+        if (toggle) toggle.textContent = '-';
+    } else {
+        answer.classList.remove('open');
+        if (toggle) toggle.textContent = '+';
+        const onEnd = () => { answer.hidden = true; answer.removeEventListener('transitionend', onEnd); };
+        answer.addEventListener('transitionend', onEnd);
+    }
+}
 
 // Smooth page transitions
 window.addEventListener('beforeunload', () => {
